@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  application: 
+    name: files-service
+  datasource: 
+    url: jdbc:mariadb://localhost:3309/omasagafiles?useUnicode=true
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
