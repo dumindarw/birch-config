@@ -1,3 +1,6 @@
+ribbon:
+  eureka:
+    enabled: true
 spring:
   datasource: 
     url: jdbc:mariadb://localhost:3309/omasagafiles?useUnicode=true
@@ -16,3 +19,18 @@ spring:
     multipart: 
       max-file-size: 2048KB
       max-request-size: 2048KB
+hibernate:
+  dialect: org.hibernate.dialect.MariaDB103Dialect
+  show_sql: false
+  format_sql: false
+  hbm2ddl:
+    auto: none
+  max_fetch_depth: 2
+  cache:
+    use_second_level_cache: false
+    use_minimal_puts: true
+    use_query_cache: false
+  connection:
+    release_mode: auto
+storage:
+  location: upload-dir
